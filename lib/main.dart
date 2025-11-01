@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:tugas_data_klinik/ui/list_page.dart';
+import 'ui/beranda.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Klinik App',
       debugShowCheckedModeBanner: false,
-      home: ListPage(),
+      title: 'Klinik',
+      home: Beranda(),
     );
   }
 }
