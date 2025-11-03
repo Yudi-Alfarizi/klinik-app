@@ -73,7 +73,6 @@ class _LoginState extends State<Login> {
       child: ElevatedButton(
         child: const Text("Login"),
         onPressed: () {
-          // sesuai modul: contoh belum menyimpan status login
           if (_usernameCtrl.text == 'admin' && _passwordCtrl.text == 'admin') {
             Navigator.pushReplacement(
               context,
